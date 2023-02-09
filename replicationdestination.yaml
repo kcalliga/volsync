@@ -1,4 +1,3 @@
-[root@hopper volsync]# cat dest-myopenshift-content.yaml
 apiVersion: volsync.backube/v1alpha1
 kind: ReplicationDestination
 metadata:
