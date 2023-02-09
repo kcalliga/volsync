@@ -1,0 +1,9 @@
+apiVersion: metallb.io/v1beta1
+kind: IPAddressPool
+metadata:
+  namespace: metallb-system
+  name: spoke2-ips
+  labels:
+spec:
+  addresses:
+  - 10.10.102.246-10.10.102.254
