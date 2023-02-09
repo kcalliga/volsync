@@ -4,9 +4,7 @@ metadata:
   name: myopenshiftblog
   namespace: myopenshiftblog
 spec:
-  sourcePVC: 
-  - myopenshiftblog-content
-  - myopenshiftblog-db
+  sourcePVC: myopenshiftblog-content
   trigger:
     schedule: "*/3 * * * *" #/*
   rsync:
