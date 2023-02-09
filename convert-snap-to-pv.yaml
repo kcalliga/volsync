@@ -12,4 +12,4 @@ spec:
     name: <snapshot_to_replace>
   resources:
     requests:
-      storage: 2Gi
+      storage: 20Gi
