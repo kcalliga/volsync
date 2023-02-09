@@ -1,0 +1,14 @@
+[root@hopper volsync]# cat dest-myopenshift-content.yaml
+apiVersion: volsync.backube/v1alpha1
+kind: ReplicationDestination
+metadata:
+  name: myopenshiftblog-content
+  namespace: myopenshiftblog
+spec:
+  rsync:
+    serviceType: LoadBalancer
+    copyMethod: Snapshot
+    capacity: 20Gi
+    accessModes: [ReadWriteOnce]
+    storageClassName: odf-lvm-vg1
+    volumeSnapshotClassName: odf-lvm-vg1
