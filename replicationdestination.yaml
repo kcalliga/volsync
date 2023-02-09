@@ -1,7 +1,7 @@
 apiVersion: volsync.backube/v1alpha1
 kind: ReplicationDestination
 metadata:
-  name: myopenshiftblog-content
+  name: myopenshiftblog
   namespace: myopenshiftblog
 spec:
   rsync:
