@@ -1,7 +1,7 @@
 apiVersion: volsync.backube/v1alpha1
 kind: ReplicationSource
 metadata:
-  name: myopenshiftblog-content
+  name: myopenshiftblog
   namespace: myopenshiftblog
 spec:
   sourcePVC: 
@@ -10,7 +10,7 @@ spec:
   trigger:
     schedule: "*/3 * * * *" #/*
   rsync:
-    sshKeys: volsync-rsync-dst-src-myopenshiftblog-content
+    sshKeys: volsync-rsync-dst-src-myopenshiftblog
     address: 192.168.102.249
     copyMethod: Snapshot
     storageClassName: odf-lvm-vg1
